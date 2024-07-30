@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.4 on win32)" generated="2024-06-19T12:14:08.502216" rpa="false" schemaversion="5">
+<suite id="s1" name="Robotframework" source="C:\Users\himanshu.singh\Downloads\robotframework">
+<suite id="s1-s1" name="Robotframework" source="C:\Users\himanshu.singh\Downloads\robotframework\robotframework">
+<suite id="s1-s1-s1" name="TestCases" source="C:\Users\himanshu.singh\Downloads\robotframework\robotframework\TestCases">
+<suite id="s1-s1-s1-s1" name="Regression" source="C:\Users\himanshu.singh\Downloads\robotframework\robotframework\TestCases\Regression.robot">
+<test id="s1-s1-s1-s1-t1" name="Regression - HomePage" line="345">
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2024-06-19T12:14:08.859195" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2024-06-19T12:14:08.859195" elapsed="0.015621">No application is open</status>
+</kw>
+<msg time="2024-06-19T12:14:08.882630" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-06-19T12:14:08.882630" level="FAIL">No application is open</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="FAIL" start="2024-06-19T12:14:08.859195" elapsed="0.023435">No application is open</status>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.882630" elapsed="0.000000"/>
+</kw>
+<arg>${search_bar}</arg>
+<status status="FAIL" start="2024-06-19T12:14:08.859195" elapsed="0.023435">No application is open</status>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${city_2UK}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.882630" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${city_3UK}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.882630" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${city_4UK}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.882630" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${city_5UK}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.882630" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${city_6UK}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.893551" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${city_1UK}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.893551" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${uni_KCL}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.894548" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.894548" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${campus_kpc}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.895596" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${back_btn}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.896594" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${notificaton}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${notification_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${homePage_Loc}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${back_btn}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${i_btn}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${banner_1}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${banner_2}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${hamburger_menu}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${ham_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${viewALL}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${viewall_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${community}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${blog}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${support}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Press Android Back Button">
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${home}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=900</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${dis_camp_1}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${dis_camp_2}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${dis_camp_3}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.897167" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.912504" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>600</arg>
+<arg>600</arg>
+<arg>100</arg>
+<arg>600</arg>
+<arg>1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.913056" elapsed="0.000415"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${dis_camp_4}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.913471" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.913471" elapsed="0.000997"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${city_center_hook}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.914468" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${dis_0.5}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.914468" elapsed="0.000997"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.915465" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${dis_0.5-2}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.915465" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.916463" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${dis_2-5}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.916463" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.916463" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${dis_5+}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.917460" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.917460" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.918457" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.918457" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.918457" elapsed="0.000998"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=850</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>550</arg>
+<arg>550</arg>
+<arg>100</arg>
+<arg>550</arg>
+<arg>1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${budget_hook_1}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${budget_hook_2}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${budget_hook_3}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>550</arg>
+<arg>550</arg>
+<arg>100</arg>
+<arg>550</arg>
+<arg>1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${budget_hook_4}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.919477" elapsed="0.009831"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=850</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${stay_hook_1}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${stay_hook_2}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>500</arg>
+<arg>500</arg>
+<arg>100</arg>
+<arg>500</arg>
+<arg>1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${stay_hook_3}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>500</arg>
+<arg>500</arg>
+<arg>100</arg>
+<arg>500</arg>
+<arg>1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${stay_hook_4}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${stay_hook_5}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.929822" elapsed="0.008305"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.938127" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${view_all_prop}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.938127" elapsed="0.000997"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${listing_page_back}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.939124" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.939124" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.940121" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${whatsapp}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.940121" elapsed="0.000000"/>
+</kw>
+<kw name="Press Android Back Button">
+<status status="NOT RUN" start="2024-06-19T12:14:08.940121" elapsed="0.000000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<arg>${talk_to_expert}</arg>
+<status status="NOT RUN" start="2024-06-19T12:14:08.941118" elapsed="0.000000"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>0</arg>
+<arg>340</arg>
+<arg>460</arg>
+<arg>460</arg>
+<arg>3000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.941118" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-19T12:14:08.942116" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-19T12:14:08.859195" elapsed="0.082921">No application is open</status>
+</test>
+<status status="FAIL" start="2024-06-19T12:14:08.583997" elapsed="0.359776"/>
+</suite>
+<status status="FAIL" start="2024-06-19T12:14:08.580007" elapsed="0.366993"/>
+</suite>
+<status status="FAIL" start="2024-06-19T12:14:08.576017" elapsed="0.372275"/>
+</suite>
+<status status="FAIL" start="2024-06-19T12:14:08.533133" elapsed="0.417153"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robotframework">Robotframework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Robotframework">Robotframework.Robotframework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TestCases">Robotframework.Robotframework.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Regression">Robotframework.Robotframework.TestCases.Regression</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-06-19T12:14:08.882630" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

@@ -1,0 +1,13 @@
+[ ERROR ] Error in file 'C:\Users\himanshu.singh\Downloads\robotframework\robotframework\TestCases\Joinwaitlist.robot' on line 4: Error in file 'C:\Users\himanshu.singh\Downloads\robotframework\robotframework\Cases\Waitrefrence\waitrefrence3.robot' on line 115: Resource file with 'Test Cases' section is invalid.
+==============================================================================
+Joinwaitlist                                                                  
+==============================================================================
+Test Case JoinwaitList Form                                           | FAIL |
+Element locator '//android.view.ViewGroup[@content-desc="Join Waitlist"]' did not match any elements after 30 seconds
+------------------------------------------------------------------------------
+Joinwaitlist                                                          | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\himanshu.singh\Downloads\robotframework\robotframework\TestCases\output.xml
+Log:     C:\Users\himanshu.singh\Downloads\robotframework\robotframework\TestCases\log.html
+Report:  C:\Users\himanshu.singh\Downloads\robotframework\robotframework\TestCases\report.html

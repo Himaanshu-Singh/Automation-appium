@@ -1,0 +1,2007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.4 on win32)" generated="2024-07-30T11:47:01.541106" rpa="false" schemaversion="5">
+<suite id="s1" name="Colc" source="C:\Users\himanshu.singh\Downloads\robotframework\robotframework\TestCases\colc.robot">
+<test id="s1-t1" name="OnBoarding - Login" line="182">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://localhost:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName='10.6.11.120:5555'</arg>
+<arg>appPackage=com.universityliving</arg>
+<arg>appActivity=com.universityliving.MainActivity</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-07-30T11:47:01.775465" elapsed="11.709453"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:15.289313" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]
+xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:13.484918" elapsed="1.804395"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:15.289313" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]'.</msg>
+<msg time="2024-07-30T11:47:15.507966" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_button"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:15.289313" elapsed="0.218653"/>
+</kw>
+<arg>${notification_allow_btn}</arg>
+<status status="PASS" start="2024-07-30T11:47:13.484918" elapsed="2.023048"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:16.148266" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc='Other_email_signIn']</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:15.507966" elapsed="0.640300"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:16.148266" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc='Other_email_signIn']'.</msg>
+<msg time="2024-07-30T11:47:16.476374" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc='Other_email_signIn']</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:16.148266" elapsed="0.328108"/>
+</kw>
+<arg>${other_email}</arg>
+<status status="PASS" start="2024-07-30T11:47:15.507966" elapsed="0.968408"/>
+</kw>
+<kw name="Custom Wait And Input Text">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:17.398122" level="INFO">xpath criteria: //android.widget.EditText[@content-desc='Email']</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:16.476374" elapsed="0.921748"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:17.398122" level="INFO">Typing text 'pravin.garg@universityliving.com' into text field '//android.widget.EditText[@content-desc='Email']'</msg>
+<msg time="2024-07-30T11:47:17.788775" level="INFO">xpath criteria: //android.widget.EditText[@content-desc='Email']</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:17.398122" elapsed="0.390653"/>
+</kw>
+<arg>${email_field}</arg>
+<arg>pravin.garg@universityliving.com</arg>
+<status status="PASS" start="2024-07-30T11:47:16.476374" elapsed="1.312401"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:18.804112" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc='OTP_Button']</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:17.788775" elapsed="1.015337"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:18.804112" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc='OTP_Button']'.</msg>
+<msg time="2024-07-30T11:47:19.210043" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc='OTP_Button']</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:18.804112" elapsed="0.405931"/>
+</kw>
+<arg>${send_otp_btn}</arg>
+<status status="PASS" start="2024-07-30T11:47:17.788775" elapsed="1.421268"/>
+</kw>
+<kw name="Custom Wait And Input Text">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:24.126408" level="INFO">xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[1]
+xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[1]
+xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[1]
+xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[1]
+xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[1]
+xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[1]
+xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[1]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:19.210043" elapsed="4.916365"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:24.141746" level="INFO">Typing text '1' into text field 'xpath = (//android.widget.EditText[@content-desc='Input_Field'])[1]'</msg>
+<msg time="2024-07-30T11:47:25.142480" level="INFO">xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[1]</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:24.126408" elapsed="1.016072"/>
+</kw>
+<arg>${OTP_1}</arg>
+<arg>1</arg>
+<status status="PASS" start="2024-07-30T11:47:19.210043" elapsed="5.932437"/>
+</kw>
+<kw name="Custom Wait And Input Text">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:26.438842" level="INFO">xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[2]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:25.157840" elapsed="1.281002"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:26.438842" level="INFO">Typing text '2' into text field 'xpath = (//android.widget.EditText[@content-desc='Input_Field'])[2]'</msg>
+<msg time="2024-07-30T11:47:27.508837" level="INFO">xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[2]</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:26.438842" elapsed="1.069995"/>
+</kw>
+<arg>${OTP_2}</arg>
+<arg>2</arg>
+<status status="PASS" start="2024-07-30T11:47:25.142480" elapsed="2.366357"/>
+</kw>
+<kw name="Custom Wait And Input Text">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:28.321144" level="INFO">xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[3]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:27.508837" elapsed="0.812307"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:28.336760" level="INFO">Typing text '3' into text field 'xpath = (//android.widget.EditText[@content-desc='Input_Field'])[3]'</msg>
+<msg time="2024-07-30T11:47:29.117811" level="INFO">xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[3]</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:28.321144" elapsed="0.796667"/>
+</kw>
+<arg>${OTP_3}</arg>
+<arg>3</arg>
+<status status="PASS" start="2024-07-30T11:47:27.508837" elapsed="1.608974"/>
+</kw>
+<kw name="Custom Wait And Input Text">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:30.212121" level="INFO">xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[4]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:29.117811" elapsed="1.094310"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:30.212121" level="INFO">Typing text '4' into text field 'xpath = (//android.widget.EditText[@content-desc='Input_Field'])[4]'</msg>
+<msg time="2024-07-30T11:47:31.109370" level="INFO">xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[4]</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:30.212121" elapsed="0.897249"/>
+</kw>
+<arg>${OTP_4}</arg>
+<arg>4</arg>
+<status status="PASS" start="2024-07-30T11:47:29.117811" elapsed="1.991559"/>
+</kw>
+<kw name="Custom Wait And Input Text">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:32.343866" level="INFO">xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[5]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:31.109370" elapsed="1.234496"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:32.343866" level="INFO">Typing text '5' into text field 'xpath = (//android.widget.EditText[@content-desc='Input_Field'])[5]'</msg>
+<msg time="2024-07-30T11:47:33.124525" level="INFO">xpath criteria: (//android.widget.EditText[@content-desc='Input_Field'])[5]</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:32.343866" elapsed="0.780659"/>
+</kw>
+<arg>${OTP_5}</arg>
+<arg>5</arg>
+<status status="PASS" start="2024-07-30T11:47:31.109370" elapsed="2.015155"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:35.141460" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="City_1"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:33.124525" elapsed="2.016935"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:35.141460" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="City_1"]'.</msg>
+<msg time="2024-07-30T11:47:35.758193" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="City_1"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:35.141460" elapsed="0.616733"/>
+</kw>
+<arg>${city_london}</arg>
+<status status="PASS" start="2024-07-30T11:47:33.124525" elapsed="2.633668"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:36.289257" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Button"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:35.758193" elapsed="0.531064"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:36.304895" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Button"]'.</msg>
+<msg time="2024-07-30T11:47:36.867493" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Button"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:36.304895" elapsed="0.562598"/>
+</kw>
+<arg>${continue}</arg>
+<status status="PASS" start="2024-07-30T11:47:35.758193" elapsed="1.109300"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:39.616599" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Skip_Button"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:36.882869" elapsed="2.733730"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:39.616599" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Skip_Button"]'.</msg>
+<msg time="2024-07-30T11:47:39.929040" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Skip_Button"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:39.616599" elapsed="0.312441"/>
+</kw>
+<arg>${later}</arg>
+<status status="PASS" start="2024-07-30T11:47:36.867493" elapsed="3.061547"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:45.582203" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Hamburger_Icon"]/android.view.ViewGroup/com.horcrux.svg.SvgView
+xpath criteria: //android.view.ViewGroup[@content-desc="Hamburger_Icon"]/android.view.ViewGroup/com.horcrux.svg.SvgView
+xpath criteria: //android.view.ViewGroup[@content-desc="Hamburger_Icon"]/android.view.ViewGroup/com.horcrux.svg.SvgView</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:39.929040" elapsed="5.653163"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:45.597531" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Hamburger_Icon"]/android.view.ViewGroup/com.horcrux.svg.SvgView'.</msg>
+<msg time="2024-07-30T11:47:46.394259" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Hamburger_Icon"]/android.view.ViewGroup/com.horcrux.svg.SvgView</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:45.597531" elapsed="0.796728"/>
+</kw>
+<arg>${hamburger_menu}</arg>
+<status status="PASS" start="2024-07-30T11:47:39.929040" elapsed="6.465219"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:47.991564" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Cost of Living Calculator"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:46.394259" elapsed="1.597305"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:47.991564" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Cost of Living Calculator"]'.</msg>
+<msg time="2024-07-30T11:47:50.194104" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Cost of Living Calculator"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:47.991564" elapsed="2.202540"/>
+</kw>
+<arg>${colc}</arg>
+<status status="PASS" start="2024-07-30T11:47:46.394259" elapsed="3.799845"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:51.388749" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[2]/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:50.194104" elapsed="1.194645"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:51.388749" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[2]/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]'.</msg>
+<msg time="2024-07-30T11:47:51.779295" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[2]/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:51.388749" elapsed="0.390546"/>
+</kw>
+<arg>${colc_b}</arg>
+<status status="PASS" start="2024-07-30T11:47:50.194104" elapsed="1.585191"/>
+</kw>
+<status status="PASS" start="2024-07-30T11:47:50.194104" elapsed="1.585191"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Custom Wait And Click">
+<arg>${colc_back}</arg>
+<status status="NOT RUN" start="2024-07-30T11:47:51.779295" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-07-30T11:47:51.779295" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-07-30T11:47:50.194104" elapsed="1.585191"/>
+</try>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:53.529049" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Cost of Living Calculator"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:51.779295" elapsed="1.749754"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:53.544446" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Cost of Living Calculator"]'.</msg>
+<msg time="2024-07-30T11:47:54.762912" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Cost of Living Calculator"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:53.529049" elapsed="1.233863"/>
+</kw>
+<arg>${colc}</arg>
+<status status="PASS" start="2024-07-30T11:47:51.779295" elapsed="2.983617"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:55.957007" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Calculate Your Cost"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:54.762912" elapsed="1.194095"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:47:55.957007" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Calculate Your Cost"]'.</msg>
+<msg time="2024-07-30T11:47:56.285001" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Calculate Your Cost"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:47:55.957007" elapsed="0.327994"/>
+</kw>
+<arg>${cyc}</arg>
+<status status="PASS" start="2024-07-30T11:47:54.762912" elapsed="1.522089"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:10.204805" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Search City or University"]/android.view.ViewGroup
+xpath criteria: //android.view.ViewGroup[@content-desc="Search City or University"]/android.view.ViewGroup
+xpath criteria: //android.view.ViewGroup[@content-desc="Search City or University"]/android.view.ViewGroup
+xpath criteria: //android.view.ViewGroup[@content-desc="Search City or University"]/android.view.ViewGroup
+xpath criteria: //android.view.ViewGroup[@content-desc="Search City or University"]/android.view.ViewGroup
+xpath criteria: //android.view.ViewGroup[@content-desc="Search City or University"]/android.view.ViewGroup
+xpath criteria: //android.view.ViewGroup[@content-desc="Search City or University"]/android.view.ViewGroup
+xpath criteria: //android.view.ViewGroup[@content-desc="Search City or University"]/android.view.ViewGroup
+xpath criteria: //android.view.ViewGroup[@content-desc="Search City or University"]/android.view.ViewGroup
+xpath criteria: //android.view.ViewGroup[@content-desc="Search City or University"]/android.view.ViewGroup
+xpath criteria: //android.view.ViewGroup[@content-desc="Search City or University"]/android.view.ViewGroup
+xpath criteria: //android.view.ViewGroup[@content-desc="Search City or University"]/android.view.ViewGroup</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:47:56.285001" elapsed="13.919804"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:10.204805" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Search City or University"]/android.view.ViewGroup'.</msg>
+<msg time="2024-07-30T11:48:10.802104" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Search City or University"]/android.view.ViewGroup</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:10.204805" elapsed="0.597299"/>
+</kw>
+<arg>${colc_search}</arg>
+<status status="PASS" start="2024-07-30T11:47:56.285001" elapsed="14.517103"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:11.880044" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:10.802104" elapsed="1.077940"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:11.880044" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView'.</msg>
+<msg time="2024-07-30T11:48:12.176805" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:11.880044" elapsed="0.296761"/>
+</kw>
+<arg>${colc_search_cross}</arg>
+<status status="PASS" start="2024-07-30T11:48:10.802104" elapsed="1.374701"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:13.395850" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Australia"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:12.176805" elapsed="1.219045"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:13.411269" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Australia"]'.</msg>
+<msg time="2024-07-30T11:48:13.958137" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Australia"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:13.395850" elapsed="0.562287"/>
+</kw>
+<arg>${clc_Australia}</arg>
+<status status="PASS" start="2024-07-30T11:48:12.176805" elapsed="1.781332"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:15.660698" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="The University of Melbourne, Melbourne"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:13.958137" elapsed="1.702561"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:15.660698" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="The University of Melbourne, Melbourne"]'.</msg>
+<msg time="2024-07-30T11:48:16.254309" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="The University of Melbourne, Melbourne"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:15.660698" elapsed="0.593611"/>
+</kw>
+<arg>${clc_a1}</arg>
+<status status="PASS" start="2024-07-30T11:48:13.958137" elapsed="2.296172"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:17.347833" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="The University of Sydney, Sydney"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:16.254309" elapsed="1.093524"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:17.347833" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="The University of Sydney, Sydney"]'.</msg>
+<msg time="2024-07-30T11:48:17.816444" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="The University of Sydney, Sydney"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:17.347833" elapsed="0.468611"/>
+</kw>
+<arg>${clc_a2}</arg>
+<status status="PASS" start="2024-07-30T11:48:16.254309" elapsed="1.562135"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:18.521104" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="University of Queensland (UQ), Brisbane"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:17.816444" elapsed="0.704660"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:18.521104" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="University of Queensland (UQ), Brisbane"]'.</msg>
+<msg time="2024-07-30T11:48:19.036830" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="University of Queensland (UQ), Brisbane"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:18.521104" elapsed="0.515726"/>
+</kw>
+<arg>${clc_a3}</arg>
+<status status="PASS" start="2024-07-30T11:48:17.816444" elapsed="1.220386"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:20.071339" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Ireland"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:19.036830" elapsed="1.034509"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:20.086896" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Ireland"]'.</msg>
+<msg time="2024-07-30T11:48:20.524349" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Ireland"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:20.071339" elapsed="0.453010"/>
+</kw>
+<arg>${clc_ire}</arg>
+<status status="PASS" start="2024-07-30T11:48:19.036830" elapsed="1.487519"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:21.555305" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="University College Dublin, Dublin"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:20.524349" elapsed="1.030956"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:21.555305" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="University College Dublin, Dublin"]'.</msg>
+<msg time="2024-07-30T11:48:22.059113" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="University College Dublin, Dublin"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:21.555305" elapsed="0.503808"/>
+</kw>
+<arg>${clc_ire1}</arg>
+<status status="PASS" start="2024-07-30T11:48:20.524349" elapsed="1.534764"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:22.777522" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="ATU Galway City, Galway"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:22.059113" elapsed="0.718409"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:22.777522" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="ATU Galway City, Galway"]'.</msg>
+<msg time="2024-07-30T11:48:23.543184" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="ATU Galway City, Galway"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:22.777522" elapsed="0.765662"/>
+</kw>
+<arg>${clc_ire2}</arg>
+<status status="PASS" start="2024-07-30T11:48:22.059113" elapsed="1.484071"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:24.652316" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Griffith College Cork, Cork"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:23.543184" elapsed="1.109132"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:24.652316" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Griffith College Cork, Cork"]'.</msg>
+<msg time="2024-07-30T11:48:25.042807" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Griffith College Cork, Cork"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:24.652316" elapsed="0.390491"/>
+</kw>
+<arg>${clc_ire3}</arg>
+<status status="PASS" start="2024-07-30T11:48:23.543184" elapsed="1.499623"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:25.999775" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Canada"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:25.058175" elapsed="0.941600"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:26.015147" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Canada"]'.</msg>
+<msg time="2024-07-30T11:48:26.858904" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Canada"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:25.999775" elapsed="0.859129"/>
+</kw>
+<arg>${colc_canada}</arg>
+<status status="PASS" start="2024-07-30T11:48:25.058175" elapsed="1.800729"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:27.624109" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="University of Montreal, Montreal"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:26.858904" elapsed="0.765205"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:27.624109" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="University of Montreal, Montreal"]'.</msg>
+<msg time="2024-07-30T11:48:28.080958" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="University of Montreal, Montreal"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:27.624109" elapsed="0.456849"/>
+</kw>
+<arg>${clc_can1}</arg>
+<status status="PASS" start="2024-07-30T11:48:26.858904" elapsed="1.222054"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:29.080664" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="University of Toronto, Toronto"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:28.080958" elapsed="0.999706"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:29.096328" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="University of Toronto, Toronto"]'.</msg>
+<msg time="2024-07-30T11:48:29.518247" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="University of Toronto, Toronto"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:29.080664" elapsed="0.437583"/>
+</kw>
+<arg>${clc_can2}</arg>
+<status status="PASS" start="2024-07-30T11:48:28.080958" elapsed="1.452724"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:30.736579" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="University of Ottawa, Ottawa"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:29.533682" elapsed="1.202897"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:30.752201" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="University of Ottawa, Ottawa"]'.</msg>
+<msg time="2024-07-30T11:48:31.215781" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="University of Ottawa, Ottawa"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:30.736579" elapsed="0.479202"/>
+</kw>
+<arg>${clc_can3}</arg>
+<status status="PASS" start="2024-07-30T11:48:29.533682" elapsed="1.682099"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:31.918563" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="US"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:31.231226" elapsed="0.687337"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:31.918563" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="US"]'.</msg>
+<msg time="2024-07-30T11:48:32.590529" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="US"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:31.918563" elapsed="0.671966"/>
+</kw>
+<arg>${colc_US}</arg>
+<status status="PASS" start="2024-07-30T11:48:31.215781" elapsed="1.374748"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:33.308920" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="New York University, New York"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:32.590529" elapsed="0.718391"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:33.308920" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="New York University, New York"]'.</msg>
+<msg time="2024-07-30T11:48:33.871492" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="New York University, New York"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:33.308920" elapsed="0.562572"/>
+</kw>
+<arg>${colc_us1}</arg>
+<status status="PASS" start="2024-07-30T11:48:32.590529" elapsed="1.280963"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:34.824393" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Boston University, Boston"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:33.871492" elapsed="0.952901"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:34.839795" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Boston University, Boston"]'.</msg>
+<msg time="2024-07-30T11:48:35.589843" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Boston University, Boston"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:34.824393" elapsed="0.765450"/>
+</kw>
+<arg>${colc_us2}</arg>
+<status status="PASS" start="2024-07-30T11:48:33.871492" elapsed="1.718351"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:36.308419" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="University of California, Davis, Davis"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:35.605200" elapsed="0.703219"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:36.323775" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="University of California, Davis, Davis"]'.</msg>
+<msg time="2024-07-30T11:48:36.698691" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="University of California, Davis, Davis"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:36.308419" elapsed="0.390272"/>
+</kw>
+<arg>${colc_us3}</arg>
+<status status="PASS" start="2024-07-30T11:48:35.589843" elapsed="1.108848"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:37.401703" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="UK"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:36.698691" elapsed="0.703012"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:37.417305" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="UK"]'.</msg>
+<msg time="2024-07-30T11:48:37.886178" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="UK"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:37.401703" elapsed="0.484475"/>
+</kw>
+<arg>${clc_uk}</arg>
+<status status="PASS" start="2024-07-30T11:48:36.698691" elapsed="1.187487"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:39.088750" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="King's College London (KCL), London"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:37.886178" elapsed="1.202572"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:39.088750" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="King's College London (KCL), London"]'.</msg>
+<msg time="2024-07-30T11:48:39.604507" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="King's College London (KCL), London"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:39.088750" elapsed="0.515757"/>
+</kw>
+<arg>${clc_uk1}</arg>
+<status status="PASS" start="2024-07-30T11:48:37.886178" elapsed="1.718329"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:40.635263" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Birmingham City University (BCU), Birmingham"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:39.619875" elapsed="1.015388"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:40.635263" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Birmingham City University (BCU), Birmingham"]'.</msg>
+<msg time="2024-07-30T11:48:41.166388" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Birmingham City University (BCU), Birmingham"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:40.635263" elapsed="0.531125"/>
+</kw>
+<arg>${clc_uk2}</arg>
+<status status="PASS" start="2024-07-30T11:48:39.604507" elapsed="1.561881"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:42.291165" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Coventry University, Coventry"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:41.166388" elapsed="1.124777"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:42.291165" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Coventry University, Coventry"]'.</msg>
+<msg time="2024-07-30T11:48:42.900694" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Coventry University, Coventry"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:42.291165" elapsed="0.609529"/>
+</kw>
+<arg>${clc_uk3}</arg>
+<status status="PASS" start="2024-07-30T11:48:41.166388" elapsed="1.734306"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:44.040716" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup[1]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:42.900694" elapsed="1.140022"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:44.040716" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup[1]'.</msg>
+<msg time="2024-07-30T11:48:44.774913" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup[1]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:44.040716" elapsed="0.734197"/>
+</kw>
+<arg>${next-housing-back}</arg>
+<status status="PASS" start="2024-07-30T11:48:42.900694" elapsed="1.874219"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:45.494028" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Calculate Your Cost"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:44.774913" elapsed="0.719115"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:45.494028" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Calculate Your Cost"]'.</msg>
+<msg time="2024-07-30T11:48:45.900455" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Calculate Your Cost"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:45.494028" elapsed="0.406427"/>
+</kw>
+<arg>${cyc}</arg>
+<status status="PASS" start="2024-07-30T11:48:44.774913" elapsed="1.125542"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:46.587780" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Coventry University, Coventry"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:45.900455" elapsed="0.687325"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:46.587780" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Coventry University, Coventry"]'.</msg>
+<msg time="2024-07-30T11:48:47.118649" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Coventry University, Coventry"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:46.587780" elapsed="0.530869"/>
+</kw>
+<arg>${clc_uk3}</arg>
+<status status="PASS" start="2024-07-30T11:48:45.900455" elapsed="1.218194"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:48.149886" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Housing"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:47.118649" elapsed="1.046636"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:48.165285" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Next - Housing"]'.</msg>
+<msg time="2024-07-30T11:48:48.634211" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Housing"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:48.165285" elapsed="0.468926"/>
+</kw>
+<arg>${next-housing}</arg>
+<status status="PASS" start="2024-07-30T11:48:47.118649" elapsed="1.515562"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:49.993189" level="INFO">xpath criteria: //android.widget.TextView[@text="Within Suburbs"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:48.634211" elapsed="1.358978"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:49.999740" level="INFO">Clicking element '//android.widget.TextView[@text="Within Suburbs"]'.</msg>
+<msg time="2024-07-30T11:48:50.675302" level="INFO">xpath criteria: //android.widget.TextView[@text="Within Suburbs"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:49.993189" elapsed="0.682113"/>
+</kw>
+<arg>${within_suburbs}</arg>
+<status status="PASS" start="2024-07-30T11:48:48.634211" elapsed="2.041091"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:51.360962" level="INFO">xpath criteria: //android.widget.TextView[@text="Within City Centre"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:50.675302" elapsed="0.685660"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:51.360962" level="INFO">Clicking element '//android.widget.TextView[@text="Within City Centre"]'.</msg>
+<msg time="2024-07-30T11:48:52.526608" level="INFO">xpath criteria: //android.widget.TextView[@text="Within City Centre"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:51.360962" elapsed="1.165646"/>
+</kw>
+<arg>${within_city_centre}</arg>
+<status status="PASS" start="2024-07-30T11:48:50.675302" elapsed="1.851306"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2024-07-30T11:48:52.526608" elapsed="1.390183"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:54.307324" level="INFO">xpath criteria: //android.widget.TextView[@text="Student Housing"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:53.916791" elapsed="0.390533"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:54.307324" level="INFO">Clicking element '//android.widget.TextView[@text="Student Housing"]'.</msg>
+<msg time="2024-07-30T11:48:54.713474" level="INFO">xpath criteria: //android.widget.TextView[@text="Student Housing"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:54.307324" elapsed="0.406150"/>
+</kw>
+<arg>${private_aparment}</arg>
+<status status="PASS" start="2024-07-30T11:48:53.916791" elapsed="0.796683"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:55.135246" level="INFO">xpath criteria: (//android.widget.TextView[@text="Know more"])[2]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:54.713474" elapsed="0.421772"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:55.135246" level="INFO">Clicking element 'xpath=(//android.widget.TextView[@text="Know more"])[2]'.</msg>
+<msg time="2024-07-30T11:48:55.541566" level="INFO">xpath criteria: (//android.widget.TextView[@text="Know more"])[2]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:55.135246" elapsed="0.406320"/>
+</kw>
+<arg>${pa_readmore}</arg>
+<status status="PASS" start="2024-07-30T11:48:54.713474" elapsed="0.828092"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>500</arg>
+<arg>500</arg>
+<arg>100</arg>
+<arg>500</arg>
+<arg>1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2024-07-30T11:48:55.541566" elapsed="1.421379"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:57.562501" level="INFO">xpath criteria: //android.widget.TextView[@text="Student Housing"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:56.962945" elapsed="0.599556"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:57.578162" level="INFO">Clicking element '//android.widget.TextView[@text="Student Housing"]'.</msg>
+<msg time="2024-07-30T11:48:57.906388" level="INFO">xpath criteria: //android.widget.TextView[@text="Student Housing"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:57.562501" elapsed="0.343887"/>
+</kw>
+<arg>${student_housing}</arg>
+<status status="PASS" start="2024-07-30T11:48:56.962945" elapsed="0.943443"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:58.296946" level="INFO">xpath criteria: (//android.widget.TextView[@text="Know more"])[1]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:48:57.906388" elapsed="0.390558"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:48:58.296946" level="INFO">Clicking element 'xpath=(//android.widget.TextView[@text="Know more"])[1]'.</msg>
+<msg time="2024-07-30T11:48:58.765612" level="INFO">xpath criteria: (//android.widget.TextView[@text="Know more"])[1]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:48:58.296946" elapsed="0.468666"/>
+</kw>
+<arg>${sh_readmore}</arg>
+<status status="PASS" start="2024-07-30T11:48:57.906388" elapsed="0.859224"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>500</arg>
+<arg>500</arg>
+<arg>100</arg>
+<arg>500</arg>
+<arg>1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2024-07-30T11:48:58.765612" elapsed="1.436896"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:00.874472" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Food"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:00.202508" elapsed="0.671964"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:00.889846" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Next - Food"]'.</msg>
+<msg time="2024-07-30T11:49:01.468151" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Food"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:00.874472" elapsed="0.593679"/>
+</kw>
+<arg>${next-food}</arg>
+<status status="PASS" start="2024-07-30T11:49:00.202508" elapsed="1.265643"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:03.217719" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup[4]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:01.468151" elapsed="1.749568"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:03.217719" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup[4]'.</msg>
+<msg time="2024-07-30T11:49:04.545527" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup[4]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:03.217719" elapsed="1.327808"/>
+</kw>
+<arg>${next-food-back}</arg>
+<status status="PASS" start="2024-07-30T11:49:01.468151" elapsed="3.077376"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:05.374382" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Food"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:04.545527" elapsed="0.828855"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:05.389704" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Next - Food"]'.</msg>
+<msg time="2024-07-30T11:49:05.811527" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Food"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:05.374382" elapsed="0.437145"/>
+</kw>
+<arg>${next-food}</arg>
+<status status="PASS" start="2024-07-30T11:49:04.545527" elapsed="1.266000"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:06.514711" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Once every Week"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:05.811527" elapsed="0.703184"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:06.530071" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Once every Week"]'.</msg>
+<msg time="2024-07-30T11:49:06.889353" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Once every Week"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:06.514711" elapsed="0.374642"/>
+</kw>
+<arg>${once_evry_week}</arg>
+<status status="PASS" start="2024-07-30T11:49:05.811527" elapsed="1.077826"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:07.639188" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Thrice every Week"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:06.889353" elapsed="0.749835"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:07.639188" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Thrice every Week"]'.</msg>
+<msg time="2024-07-30T11:49:07.982856" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Thrice every Week"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:07.639188" elapsed="0.343668"/>
+</kw>
+<arg>${twice_ew}</arg>
+<status status="PASS" start="2024-07-30T11:49:06.889353" elapsed="1.093503"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:08.748342" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Almost all Week"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:07.982856" elapsed="0.765486"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:08.763968" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Almost all Week"]'.</msg>
+<msg time="2024-07-30T11:49:09.076482" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Almost all Week"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:08.763968" elapsed="0.312514"/>
+</kw>
+<arg>${almost_ew}</arg>
+<status status="PASS" start="2024-07-30T11:49:07.982856" elapsed="1.093626"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:09.826334" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Expensive - $$$"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:09.091970" elapsed="0.734364"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:09.826334" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Expensive - $$$"]'.</msg>
+<msg time="2024-07-30T11:49:10.156763" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Expensive - $$$"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:09.826334" elapsed="0.330429"/>
+</kw>
+<arg>${expensive}</arg>
+<status status="PASS" start="2024-07-30T11:49:09.091970" elapsed="1.064793"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:10.919109" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Moderate - $$"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:10.156763" elapsed="0.762346"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:10.919109" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Moderate - $$"]'.</msg>
+<msg time="2024-07-30T11:49:11.793854" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Moderate - $$"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:10.919109" elapsed="0.874745"/>
+</kw>
+<arg>${moderate}</arg>
+<status status="PASS" start="2024-07-30T11:49:10.156763" elapsed="1.637091"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:12.528057" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Cheap - $"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:11.793854" elapsed="0.734203"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:12.528057" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Cheap - $"]'.</msg>
+<msg time="2024-07-30T11:49:12.856325" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Cheap - $"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:12.528057" elapsed="0.328268"/>
+</kw>
+<arg>${cheap}</arg>
+<status status="PASS" start="2024-07-30T11:49:11.793854" elapsed="1.062471"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:13.574744" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Transportation"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:12.856325" elapsed="0.718419"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:13.574744" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Next - Transportation"]'.</msg>
+<msg time="2024-07-30T11:49:13.902742" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Transportation"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:13.574744" elapsed="0.327998"/>
+</kw>
+<arg>${next-transportation}</arg>
+<status status="PASS" start="2024-07-30T11:49:12.856325" elapsed="1.046417"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:15.200265" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup[4]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:13.902742" elapsed="1.297523"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:15.200265" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup[4]'.</msg>
+<msg time="2024-07-30T11:49:15.543990" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup[4]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:15.200265" elapsed="0.343725"/>
+</kw>
+<arg>${next-transportation-back}</arg>
+<status status="PASS" start="2024-07-30T11:49:13.902742" elapsed="1.641248"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:16.215752" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Transportation"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:15.543990" elapsed="0.671762"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:16.215752" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Next - Transportation"]'.</msg>
+<msg time="2024-07-30T11:49:17.371903" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Transportation"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:16.215752" elapsed="1.156151"/>
+</kw>
+<arg>${next-transportation}</arg>
+<status status="PASS" start="2024-07-30T11:49:15.543990" elapsed="1.827913"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:17.746798" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="None"])[1]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:17.371903" elapsed="0.374895"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:17.746798" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="None"])[1]'.</msg>
+<msg time="2024-07-30T11:49:18.231063" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="None"])[1]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:17.746798" elapsed="0.484265"/>
+</kw>
+<arg>${walking_n}</arg>
+<status status="PASS" start="2024-07-30T11:49:17.371903" elapsed="0.859160"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:18.715066" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Often"])[1]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:18.231063" elapsed="0.484003"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:18.715066" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Often"])[1]'.</msg>
+<msg time="2024-07-30T11:49:19.168082" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Often"])[1]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:18.715066" elapsed="0.453016"/>
+</kw>
+<arg>${walking_often}</arg>
+<status status="PASS" start="2024-07-30T11:49:18.231063" elapsed="0.937019"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:19.496400" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Rarely"])[1]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:19.168082" elapsed="0.328318"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:19.496400" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Rarely"])[1]'.</msg>
+<msg time="2024-07-30T11:49:19.855628" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Rarely"])[1]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:19.496400" elapsed="0.359228"/>
+</kw>
+<arg>${walking_rarely}</arg>
+<status status="PASS" start="2024-07-30T11:49:19.168082" elapsed="0.687546"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:20.121183" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Sometimes"])[1]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:19.855628" elapsed="0.265555"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:20.121183" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Sometimes"])[1]'.</msg>
+<msg time="2024-07-30T11:49:20.433649" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Sometimes"])[1]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:20.121183" elapsed="0.312466"/>
+</kw>
+<arg>${walking_sometimes}</arg>
+<status status="PASS" start="2024-07-30T11:49:19.855628" elapsed="0.578021"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:20.761742" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="None"])[2]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:20.433649" elapsed="0.328093"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:20.761742" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="None"])[2]'.</msg>
+<msg time="2024-07-30T11:49:21.183246" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="None"])[2]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:20.761742" elapsed="0.421504"/>
+</kw>
+<arg>${bicycle_n}</arg>
+<status status="PASS" start="2024-07-30T11:49:20.433649" elapsed="0.749597"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:21.605008" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Often"])[2]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:21.183246" elapsed="0.421762"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:21.605008" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Often"])[2]'.</msg>
+<msg time="2024-07-30T11:49:22.261105" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Often"])[2]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:21.605008" elapsed="0.656097"/>
+</kw>
+<arg>${bicycle_often}</arg>
+<status status="PASS" start="2024-07-30T11:49:21.183246" elapsed="1.077859"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:22.464180" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Rarely"])[2]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:22.261105" elapsed="0.203075"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:22.464180" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Rarely"])[2]'.</msg>
+<msg time="2024-07-30T11:49:22.792228" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Rarely"])[2]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:22.464180" elapsed="0.328048"/>
+</kw>
+<arg>${bicycle_rarely}</arg>
+<status status="PASS" start="2024-07-30T11:49:22.261105" elapsed="0.531123"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:23.057793" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Sometimes"])[2]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:22.792228" elapsed="0.265565"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:23.057793" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Sometimes"])[2]'.</msg>
+<msg time="2024-07-30T11:49:23.432705" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Sometimes"])[2]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:23.057793" elapsed="0.374912"/>
+</kw>
+<arg>${bicycle_sometimes}</arg>
+<status status="PASS" start="2024-07-30T11:49:22.792228" elapsed="0.640477"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:23.729806" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="None"])[3]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:23.448376" elapsed="0.281430"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:23.729806" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="None"])[3]'.</msg>
+<msg time="2024-07-30T11:49:24.120048" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="None"])[3]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:23.729806" elapsed="0.390242"/>
+</kw>
+<arg>${transport_n}</arg>
+<status status="PASS" start="2024-07-30T11:49:23.432705" elapsed="0.687343"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:24.870533" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Often"])[3]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:24.120048" elapsed="0.750485"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:24.885930" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Often"])[3]'.</msg>
+<msg time="2024-07-30T11:49:25.323532" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Often"])[3]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:24.870533" elapsed="0.452999"/>
+</kw>
+<arg>${transport_often}</arg>
+<status status="PASS" start="2024-07-30T11:49:24.120048" elapsed="1.203484"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:26.260559" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Rarely"])[3]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:25.323532" elapsed="0.937027"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:26.276216" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Rarely"])[3]'.</msg>
+<msg time="2024-07-30T11:49:26.838552" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Rarely"])[3]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:26.260559" elapsed="0.577993"/>
+</kw>
+<arg>${transport_rarely}</arg>
+<status status="PASS" start="2024-07-30T11:49:25.323532" elapsed="1.515020"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:27.666526" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Sometimes"])[3]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:26.838552" elapsed="0.827974"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:27.666526" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Sometimes"])[3]'.</msg>
+<msg time="2024-07-30T11:49:28.182208" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Sometimes"])[3]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:27.666526" elapsed="0.515682"/>
+</kw>
+<arg>${transport_sometimes}</arg>
+<status status="PASS" start="2024-07-30T11:49:26.838552" elapsed="1.343656"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2024-07-30T11:49:28.182208" elapsed="1.359137"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:30.540812" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="None"])[4]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:29.541345" elapsed="0.999467"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:30.540812" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="None"])[4]'.</msg>
+<msg time="2024-07-30T11:49:30.957921" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="None"])[4]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:30.540812" elapsed="0.417109"/>
+</kw>
+<arg>${uber_n}</arg>
+<status status="PASS" start="2024-07-30T11:49:29.541345" elapsed="1.416576"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:31.770208" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Often"])[4]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:30.957921" elapsed="0.812287"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:31.785659" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Often"])[4]'.</msg>
+<msg time="2024-07-30T11:49:32.207645" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Often"])[4]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:31.770208" elapsed="0.437437"/>
+</kw>
+<arg>${uber_often}</arg>
+<status status="PASS" start="2024-07-30T11:49:30.957921" elapsed="1.249724"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:32.929980" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Rarely"])[4]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:32.207645" elapsed="0.737679"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:32.945324" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Rarely"])[4]'.</msg>
+<msg time="2024-07-30T11:49:33.288958" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Rarely"])[4]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:32.945324" elapsed="0.343634"/>
+</kw>
+<arg>${uber_rarely}</arg>
+<status status="PASS" start="2024-07-30T11:49:32.207645" elapsed="1.081313"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:34.038780" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Sometimes"])[4]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:33.288958" elapsed="0.749822"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:34.038780" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Sometimes"])[4]'.</msg>
+<msg time="2024-07-30T11:49:34.398075" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Sometimes"])[4]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:34.038780" elapsed="0.359295"/>
+</kw>
+<arg>${uber_sometimes}</arg>
+<status status="PASS" start="2024-07-30T11:49:33.288958" elapsed="1.109117"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:35.163567" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Daily Miscellaneous"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:34.398075" elapsed="0.765492"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:35.163567" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Next - Daily Miscellaneous"]'.</msg>
+<msg time="2024-07-30T11:49:35.507196" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Daily Miscellaneous"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:35.163567" elapsed="0.343629"/>
+</kw>
+<arg>${next-daily_miscellaneous}</arg>
+<status status="PASS" start="2024-07-30T11:49:34.398075" elapsed="1.109121"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:36.491558" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup[4]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:35.507196" elapsed="0.984362"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:36.491558" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup[4]'.</msg>
+<msg time="2024-07-30T11:49:36.866451" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.view.ViewGroup[4]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:36.491558" elapsed="0.374893"/>
+</kw>
+<arg>${next-daily_miscellaneous_back}</arg>
+<status status="PASS" start="2024-07-30T11:49:35.507196" elapsed="1.359255"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:37.584897" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Daily Miscellaneous"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:36.866451" elapsed="0.718446"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:37.584897" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Next - Daily Miscellaneous"]'.</msg>
+<msg time="2024-07-30T11:49:37.944332" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Daily Miscellaneous"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:37.584897" elapsed="0.359435"/>
+</kw>
+<arg>${next-daily_miscellaneous}</arg>
+<status status="PASS" start="2024-07-30T11:49:36.866451" elapsed="1.077881"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:38.865823" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="None"])[1]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:37.944332" elapsed="0.921491"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:38.865823" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="None"])[1]'.</msg>
+<msg time="2024-07-30T11:49:39.225099" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="None"])[1]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:38.865823" elapsed="0.359276"/>
+</kw>
+<arg>${ent_n}</arg>
+<status status="PASS" start="2024-07-30T11:49:37.944332" elapsed="1.280767"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:39.975156" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Expensive"])[1]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:39.225099" elapsed="0.750057"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:39.990513" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Expensive"])[1]'.</msg>
+<msg time="2024-07-30T11:49:40.334358" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Expensive"])[1]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:39.975156" elapsed="0.359202"/>
+</kw>
+<arg>${ent_often}</arg>
+<status status="PASS" start="2024-07-30T11:49:39.225099" elapsed="1.109259"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:41.099907" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Moderate"])[1]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:40.334358" elapsed="0.765549"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:41.115251" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Moderate"])[1]'.</msg>
+<msg time="2024-07-30T11:49:41.881008" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Moderate"])[1]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:41.099907" elapsed="0.781101"/>
+</kw>
+<arg>${ent_rarely}</arg>
+<status status="PASS" start="2024-07-30T11:49:40.334358" elapsed="1.546650"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:42.630728" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Economical"])[1]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:41.881008" elapsed="0.749720"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:42.646169" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Economical"])[1]'.</msg>
+<msg time="2024-07-30T11:49:43.005720" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Economical"])[1]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:42.630728" elapsed="0.374992"/>
+</kw>
+<arg>${ent_sometimes}</arg>
+<status status="PASS" start="2024-07-30T11:49:41.881008" elapsed="1.124712"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:43.786755" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="None"])[2]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:43.005720" elapsed="0.781035"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:43.802148" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="None"])[2]'.</msg>
+<msg time="2024-07-30T11:49:44.145781" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="None"])[2]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:43.786755" elapsed="0.359026"/>
+</kw>
+<arg>${cloth_n}</arg>
+<status status="PASS" start="2024-07-30T11:49:43.005720" elapsed="1.140061"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:44.989351" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Expensive"])[2]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:44.145781" elapsed="0.843570"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:44.989351" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Expensive"])[2]'.</msg>
+<msg time="2024-07-30T11:49:45.364476" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Expensive"])[2]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:44.989351" elapsed="0.375125"/>
+</kw>
+<arg>${cloth_often}</arg>
+<status status="PASS" start="2024-07-30T11:49:44.145781" elapsed="1.218695"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:46.082839" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Moderate"])[2]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:45.364476" elapsed="0.718363"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:46.082839" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Moderate"])[2]'.</msg>
+<msg time="2024-07-30T11:49:46.426499" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Moderate"])[2]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:46.082839" elapsed="0.343660"/>
+</kw>
+<arg>${cloth_rarely}</arg>
+<status status="PASS" start="2024-07-30T11:49:45.364476" elapsed="1.062023"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:47.160972" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Economical"])[2]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:46.426499" elapsed="0.734473"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:47.160972" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Economical"])[2]'.</msg>
+<msg time="2024-07-30T11:49:47.911052" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Economical"])[2]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:47.160972" elapsed="0.750080"/>
+</kw>
+<arg>${cloth_sometimes}</arg>
+<status status="PASS" start="2024-07-30T11:49:46.426499" elapsed="1.484553"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:48.660967" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="None"])[3]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:47.926497" elapsed="0.734470"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:48.676319" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="None"])[3]'.</msg>
+<msg time="2024-07-30T11:49:49.026841" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="None"])[3]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:48.660967" elapsed="0.365874"/>
+</kw>
+<arg>${mp_n}</arg>
+<status status="PASS" start="2024-07-30T11:49:47.926497" elapsed="1.100344"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:49.854733" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Expensive"])[3]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:49.026841" elapsed="0.827892"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:49.854733" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Expensive"])[3]'.</msg>
+<msg time="2024-07-30T11:49:50.214012" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Expensive"])[3]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:49.854733" elapsed="0.359279"/>
+</kw>
+<arg>${mp_often}</arg>
+<status status="PASS" start="2024-07-30T11:49:49.026841" elapsed="1.187171"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:50.999875" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Moderate"])[3]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:50.214012" elapsed="0.785863"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:51.015262" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Moderate"])[3]'.</msg>
+<msg time="2024-07-30T11:49:51.359086" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Moderate"])[3]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:50.999875" elapsed="0.359211"/>
+</kw>
+<arg>${mp_rarely}</arg>
+<status status="PASS" start="2024-07-30T11:49:50.214012" elapsed="1.145074"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:52.139964" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Economical"])[3]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:51.359086" elapsed="0.780878"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:52.139964" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Economical"])[3]'.</msg>
+<msg time="2024-07-30T11:49:52.483882" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Economical"])[3]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:52.139964" elapsed="0.343918"/>
+</kw>
+<arg>${mp_sometimes}</arg>
+<status status="PASS" start="2024-07-30T11:49:51.359086" elapsed="1.124796"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=500</arg>
+<arg>start_y=1000</arg>
+<arg>offset_x=500</arg>
+<arg>offset_y=500</arg>
+<arg>duration=1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2024-07-30T11:49:52.483882" elapsed="1.405715"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:54.780012" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Moderate"])[4]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:53.889597" elapsed="0.890415"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:54.780012" level="INFO">Clicking element 'xpath=(//android.view.ViewGroup[@content-desc="Moderate"])[4]'.</msg>
+<msg time="2024-07-30T11:49:55.076765" level="INFO">xpath criteria: (//android.view.ViewGroup[@content-desc="Moderate"])[4]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:54.780012" elapsed="0.296753"/>
+</kw>
+<arg>${fit_rarely}</arg>
+<status status="PASS" start="2024-07-30T11:49:53.889597" elapsed="1.187168"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:55.908632" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Total Cost"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:55.076765" elapsed="0.831867"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:55.923983" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Next - Total Cost"]'.</msg>
+<msg time="2024-07-30T11:49:56.267868" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Next - Total Cost"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:55.923983" elapsed="0.343885"/>
+</kw>
+<arg>${next-total_cost}</arg>
+<status status="PASS" start="2024-07-30T11:49:55.076765" elapsed="1.191103"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:58.157829" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:56.283288" elapsed="1.874541"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:58.157829" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]'.</msg>
+<msg time="2024-07-30T11:49:58.595228" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:58.157829" elapsed="0.437399"/>
+</kw>
+<arg>${topbar_n1}</arg>
+<status status="PASS" start="2024-07-30T11:49:56.283288" elapsed="2.311940"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:59.251545" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:58.595228" elapsed="0.656317"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:49:59.266944" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]'.</msg>
+<msg time="2024-07-30T11:49:59.673423" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:49:59.251545" elapsed="0.421878"/>
+</kw>
+<arg>${topbar_n2}</arg>
+<status status="PASS" start="2024-07-30T11:49:58.595228" elapsed="1.078195"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:50:00.407405" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:49:59.673423" elapsed="0.733982"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:50:00.407405" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]'.</msg>
+<msg time="2024-07-30T11:50:00.735589" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:50:00.407405" elapsed="0.328184"/>
+</kw>
+<arg>${topbar_n3}</arg>
+<status status="PASS" start="2024-07-30T11:49:59.673423" elapsed="1.062166"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:50:01.408999" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:50:00.735589" elapsed="0.673410"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:50:01.408999" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]'.</msg>
+<msg time="2024-07-30T11:50:01.768193" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:50:01.408999" elapsed="0.359194"/>
+</kw>
+<arg>${topbar_n4}</arg>
+<status status="PASS" start="2024-07-30T11:50:00.735589" elapsed="1.032604"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:50:02.455564" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[5]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:50:01.768193" elapsed="0.687371"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:50:02.470974" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[5]'.</msg>
+<msg time="2024-07-30T11:50:02.799247" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[5]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:50:02.455564" elapsed="0.343683"/>
+</kw>
+<arg>${topbar_n5}</arg>
+<status status="PASS" start="2024-07-30T11:50:01.768193" elapsed="1.031054"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:50:03.533248" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[6]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:50:02.799247" elapsed="0.734001"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:50:03.533248" level="INFO">Clicking element '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[6]'.</msg>
+<msg time="2024-07-30T11:50:03.877133" level="INFO">xpath criteria: //android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[6]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:50:03.533248" elapsed="0.343885"/>
+</kw>
+<arg>${topbar_n6}</arg>
+<status status="PASS" start="2024-07-30T11:50:02.799247" elapsed="1.077886"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:50:05.487320" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Share on WhatsApp"]
+xpath criteria: //android.view.ViewGroup[@content-desc="Share on WhatsApp"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:50:03.877133" elapsed="1.610187"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:50:05.487320" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Share on WhatsApp"]'.</msg>
+<msg time="2024-07-30T11:50:05.815220" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Share on WhatsApp"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:50:05.487320" elapsed="0.327900"/>
+</kw>
+<arg>${colc_share_wa}</arg>
+<status status="PASS" start="2024-07-30T11:50:03.877133" elapsed="1.938087"/>
+</kw>
+<kw name="Custom Wait And Click">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-30T11:50:07.156825" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Submit"]
+xpath criteria: //android.view.ViewGroup[@content-desc="Submit"]</msg>
+<arg>${locator}</arg>
+<arg>timeout=${default_wait_time}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-30T11:50:05.830717" elapsed="1.326108"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-30T11:50:07.156825" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="Submit"]'.</msg>
+<msg time="2024-07-30T11:50:07.391148" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="Submit"]</msg>
+<arg>${locator}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-30T11:50:07.156825" elapsed="0.234323"/>
+</kw>
+<arg>${colc_submit}</arg>
+<status status="PASS" start="2024-07-30T11:50:05.830717" elapsed="1.560431"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-30T11:50:12.391635" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-30T11:50:07.391148" elapsed="5.000487"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>0</arg>
+<arg>340</arg>
+<arg>460</arg>
+<arg>460</arg>
+<arg>3000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2024-07-30T11:50:12.391635" elapsed="3.358607"/>
+</kw>
+<status status="PASS" start="2024-07-30T11:50:12.391635" elapsed="3.358607"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>0</arg>
+<arg>340</arg>
+<arg>460</arg>
+<arg>460</arg>
+<arg>3000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2024-07-30T11:50:15.750242" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-07-30T11:50:15.750242" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-07-30T11:50:12.391635" elapsed="3.358607"/>
+</try>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>0</arg>
+<arg>340</arg>
+<arg>460</arg>
+<arg>460</arg>
+<arg>3000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2024-07-30T11:50:15.750242" elapsed="3.381974"/>
+</kw>
+<status status="PASS" start="2024-07-30T11:47:01.775465" elapsed="197.356751"/>
+</test>
+<status status="PASS" start="2024-07-30T11:47:01.541106" elapsed="197.591110"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Colc">Colc</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

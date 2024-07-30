@@ -1,0 +1,14 @@
+[ ERROR ] Error in file 'C:\Users\himanshu.singh\Downloads\robotframework\robotframework\TestCases\BookNow-Android.robot' on line 4: Error in file 'C:\Users\himanshu.singh\Downloads\robotframework\robotframework\Cases\Waitrefrence\waitrefrence3.robot' on line 115: Resource file with 'Test Cases' section is invalid.
+==============================================================================
+BookNow-Android                                                               
+==============================================================================
+Test Case BookNowForm                                                 C:\Users\himanshu.singh\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\AppiumLibrary\keywords\_screenshot.py:25: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+  self._current_application().get_screenshot_as_file(path)
+| PASS |
+------------------------------------------------------------------------------
+BookNow-Android                                                       | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\himanshu.singh\Downloads\robotframework\robotframework\TestCases\output.xml
+Log:     C:\Users\himanshu.singh\Downloads\robotframework\robotframework\TestCases\log.html
+Report:  C:\Users\himanshu.singh\Downloads\robotframework\robotframework\TestCases\report.html

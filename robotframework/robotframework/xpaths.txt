@@ -1,0 +1,6 @@
+search icon header - (//android.view.ViewGroup/com.horcrux.svg.SvgView)[3]
+bell icon header - (//android.view.ViewGroup/com.horcrux.svg.SvgView)[4]
+city name below logo - (//android.widget.TextView)[1]
+city name close icon - (//com.horcrux.svg.SvgView)[2]
+city search bar input fiedl  - //android.widget.EditText
+
